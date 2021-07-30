@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHistory } from 'react-router-dom';
+import CreateForm from '../CreateForm/CreateForm';
 
 const Home = ({match}) => {
     const [records, setRecords] = useState([]);
@@ -37,7 +38,7 @@ const Home = ({match}) => {
     return (
         <div>
             <h1>Welcome to Record Tracker!</h1>
-            {/* create form */}
+            <CreateForm getRecordsData={getRecordsData} />
             <h2>My Most Wanted Records</h2>
             {records.map((record, idx) => {
                 return (
