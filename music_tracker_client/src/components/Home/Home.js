@@ -46,6 +46,7 @@ const Home = ({match}) => {
                         <h3>{record.title}</h3>
                         <h3>{record.artist}</h3>
                         <button onClick={() => _handleDelete(record.id)}>Delete</button>
+                        <button>Edit</button>
                     </div>
                 )
             })}
